@@ -10,7 +10,7 @@ from keras.models import load_model
 import csv
 from sys import argv
 import jieba
-jieba.load_userdict(argv[3])
+jieba.load_userdict('dict.txt.big')
 from gensim.models.word2vec import Word2Vec
 import tensorflow as tf
 from keras.backend.tensorflow_backend import set_session

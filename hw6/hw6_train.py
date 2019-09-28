@@ -2,7 +2,7 @@ from sys import argv
 import csv
 import numpy as np
 import jieba
-jieba.load_userdict(argv[4])
+jieba.load_userdict('dict.txt.big')
 from gensim.models.word2vec import Word2Vec
 from keras.models import Model, Sequential
 from keras.layers.normalization import BatchNormalization
